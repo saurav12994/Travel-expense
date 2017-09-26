@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/re"
+    tools:context="com.example.sourabh.travelexpense.ExpenseFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=" Enter remaining Expense  detail"
+        android:textColor="@color/titlebackgroundcolor"
+        android:id="@+id/textView1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Category"
+        android:textColor="@color/titlecolor"
+        android:id="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textView1" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:padding="5dip"
+        android:background="@drawable/rounded_edittext"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:spinnerMode="dialog"
+        android:layout_alignEnd="@+id/textView1"
+        android:layout_alignStart="@+id/textView1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Amount spend "
+        android:textColor="@color/titlecolor"
+        android:layout_marginTop="200dp"
+        android:id="@+id/textView3"
+
+        android:layout_alignStart="@+id/spinner" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:padding="5dip"
+        android:background="@drawable/rounded_edittext"
+        android:id="@+id/editText6"
+
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="0dp"
+        android:layout_alignEnd="@+id/spinner" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="       Date"
+        android:textColor="@color/titlecolor"
+        android:id="@+id/textView4"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/editText6"
+        android:layout_alignEnd="@+id/editText6"
+        android:layout_alignStart="@+id/textView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/editText7"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4"
+        android:padding="5dip"
+        android:background="@drawable/rounded_edittext"
+        android:layout_alignStart="@+id/textView4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Expense"
+        android:id="@+id/button1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/textView3" />
+
+</RelativeLayout>

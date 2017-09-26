@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/re"
+    tools:context="com.example.sourabh.travelexpense.TripFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/titlecolor"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Enter Budget"
+        android:id="@+id/textView2"
+        android:layout_marginTop="84dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:padding="5dip"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginEnd="31dp"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Enter startdate"
+        android:id="@+id/textView3"
+        android:textColor="@color/titlecolor"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:padding="5dip"
+        android:background="@drawable/rounded_edittext"
+        android:id="@+id/editText3"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignStart="@+id/editText2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Enter end date"
+        android:textColor="@color/titlecolor"
+        android:id="@+id/textView4"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:padding="5dip"
+        android:background="@drawable/rounded_edittext"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignStart="@+id/editText3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:id="@+id/button2"
+        android:layout_below="@+id/editText4"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_marginTop="86dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/titlebackgroundcolor"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" Enter remaining Trip Detail"
+        android:id="@+id/textView8"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

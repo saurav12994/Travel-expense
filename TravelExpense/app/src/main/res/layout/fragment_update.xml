@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/re"
+    tools:context="com.example.sourabh.travelexpense.UpdateFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/radiogroup1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="select what you want to update "
+            android:textColor="@color/titlecolor"
+            android:id="@+id/textView7"
+            android:layout_gravity="center_horizontal" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destination"
+            android:id="@+id/radioButton"
+            android:textColor="@color/titlebackgroundcolor"
+            android:layout_gravity="center_horizontal"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End date"
+            android:id="@+id/radioButton2"
+            android:textColor="@color/titlebackgroundcolor"
+            android:layout_gravity="center_horizontal"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Budget"
+            android:id="@+id/radioButton3"
+            android:textColor="@color/titlebackgroundcolor"
+            android:layout_gravity="center_horizontal"
+            android:checked="false" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/button3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
